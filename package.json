@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "main": "src/index.js",
     "scripts": {
+        "heroku-prebuild": "npm install --dev",
         "build": "webpack --mode production",
         "start": "webpack-dev-server --open --mode development",
         "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
@@ -54,6 +55,6 @@
         "eslint-plugin-react": "^7.14.3",
         "prettier": "^1.19.1",
         "watchpack-chokidar2": "^2.0.1",
-        "webpack-dev-server": "^3.9.0"
+        "webpack-dev-server": "^3.11.2"
     }
 }
