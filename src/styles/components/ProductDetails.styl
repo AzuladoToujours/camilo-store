@@ -1,0 +1,59 @@
+.product-details-container
+  display grid
+  grid-template-rows auto
+  grid-template-areas 'header body''footer footer'
+    
+
+.product-details-header
+  grid-area header
+  justify-content center
+
+.product-details-body
+  grid-area body
+  border-radius 5px
+  box-shadow 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03)
+  & > .prices
+      .original-price
+        color: grey;
+        text-decoration: line-through;
+      .discount
+        color: rgb(83, 194, 73);
+        font-size: 15px
+      span 
+        color: black
+        font-size: 30px
+  & > .normal-price
+        color: black
+        font-size: 30px
+    > .shipping
+        i 
+          color: #39b54a
+          margin-left: 5px
+          margin-right: 10px 
+          
+    > .button
+        width 100%
+        padding: 20px 0px 20px 0px
+        border-radius 0px 0px 5px 5px
+        border 0px
+        outline 0
+        cursor pointer
+        font-family: 'Open Sans', sans-serif
+        font-size 16px
+        font-weight 400
+        background-color: #3483fa
+        color: white
+        &:hover
+          background-color  rgba(65,137,230,.15);;
+          color  #3483fa
+
+
+.product-details-footer
+  grid-area footer
+
+.product-info
+  display flex
+  flex-flow row wrap
+  & > div
+    flex 0 0 25%
+    margin 2.5%
