@@ -3,7 +3,8 @@
     "version": "0.0.1",
     "main": "src/index.js",
     "scripts": {
-        "heroku-prebuild": "npm install --dev",
+        "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
+        "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;",
         "build": "webpack --mode production",
         "start": "webpack-dev-server --open --mode development",
         "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
