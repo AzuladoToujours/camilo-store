@@ -6,7 +6,8 @@
         "build": "webpack --mode production",
         "start": "webpack-dev-server --open --mode development",
         "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
-        "lint": "eslint src/"
+        "lint": "eslint src/",
+        "heroku-postbuild": "webpack --config webpack.prod.js"
     },
     "keywords": [
         "React",
