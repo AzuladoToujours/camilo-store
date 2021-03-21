@@ -4,6 +4,7 @@ import Home from '../containers/Home';
 import Checkout from '../containers/Checkout';
 import Layout from '../components/Layout';
 import ProductDetails from '../components/ProductDetails';
+import NotFound from '../containers/NotFound';
 
 const App = () => (
   <BrowserRouter>
@@ -17,6 +18,9 @@ const App = () => (
         </Route>
         <Route exact path="/product/:id">
           <ProductDetails />
+        </Route>
+        <Route>
+          <NotFound />
         </Route>
       </Switch>
     </Layout>
